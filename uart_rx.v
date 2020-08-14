@@ -81,7 +81,7 @@ begin
 						r_rx_byte[bitIndex]<=r_rx_data;
 						if(bitIndex<7)           // ONLY UPTO 8 BIT OF DATA
 						begin
-							bitIndex=bitIndex+1;
+							bitIndex<=bitIndex+1;
 							state<=DATA;
 						end
 						else
